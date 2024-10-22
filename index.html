@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contact-form">
+        <h1>Say <span class="highlight">Hello!</span></h1>
+        <p>Feel free to stop by and say hi!</p>
+
+        <form id="contactForm">
+            <label for="name">Name <span class="req">*</span></label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">E-mail id <span class="req">*</span></label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="contactNumber">Contact Number <span class="req">*</span></label>
+            <input type="tel" id="contactNumber" name="contactNumber" required>
+            
+            <label for="subject">Subject <span class="req">*</span></label>
+            <input type="text" id="subject" name="subject" required>
+            
+            <label for="message">Message <span class="req">*</span></label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+    </div>
+
+    <script src="app.js" type="module"></script>
+</body>
+</html>
